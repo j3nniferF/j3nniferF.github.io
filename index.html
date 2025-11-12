@@ -1,78 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JENNIFER HANDEL Resume</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jennifer Handel – Resume</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 <body>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <span class="sep">|</span>
-      <a href="projects.html">Projects</a>
-      <span class="sep">|</span>
-      <a href="https://github.com/j3nniferF" target="_blank">GitHub</a>
-    </nav>
+  <main class="page">
+    <article class="resume">
+      <header class="resume__header">
+        <h1 class="name">Jennifer Handel</h1>
+        <nav class="contact">
+          <a class="btn btn--ghost" href="mailto:jenniferwhatever@gmail.com">Email</a>
+          <a class="btn btn--ghost" href="tel:+17736200256">Phone</a>
+          <a class="btn btn--primary" href="https://linkedin.com/in/jenniferhandel" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn--ghost" href="https://github.com/j3nniferf" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </header>
 
-    <main class="container">
-      <section class="header">
-        <h1>Jennifer Handel</h1>
-        <p class="contact">
-          Email:
-          <a href="mailto:j3nniferwhatever@gmail.com">j3nniferwhatever@gmail.com</a>
-          &nbsp;|&nbsp; Phone:
-          <a href="tel:+17736200256">(773) 620-0256</a>
-          &nbsp;|&nbsp; LinkedIn:
-          <a href="https://www.linkedin.com/in/jenniferhandel" target="_blank" rel="noopener noreferrer">linkedin.com/in/jenniferhandel</a>
-        </p>
+      <section class="section">
+        <h2 class="section__title">Summary</h2>
+        <p>Coding student at Code:You in Louisville. Learning HTML, CSS, and GitHub. Bringing design sense from prior graphic design studies and years of hospitality leadership.</p>
       </section>
 
       <section class="section">
-  <h2>✨ Summary</h2>
-  <p>
-    Coding student at Code:You in Louisville. Learning HTML, CSS, GitHub.
-  </p>
-</section>
-
-<section class="section">
-  <h2>💼 Work Experience</h2>
-  ...
-</section>
-
-<section class="section">
-  <h2>🎓 Education</h2>
-  ...
-</section>
-
-<section class="section">
-  <h2>🎨 Skills</h2>
-  ...
-</section>
-
-
-
-      <section class="section">
-        <h2>Education</h2>
+        <h2 class="section__title">Work Experience</h2>
         <div class="item">
-          <h3>Graphic Design Student – Columbia College</h3>
-          <p>2015–2017</p>
+          <h3>Bartender / Manager — Merryweather</h3>
+          <p class="meta">2018–2022</p>
+          <ul class="bullets">
+            <li>Managed daily operations, created training guides, and handled inventory.</li>
+            <li>Improved guest experience and streamlined closing procedures.</li>
+          </ul>
         </div>
-      </section>
 
-      <section class="section">
-        <h2>Skills</h2>
-        <div class="skills">
-          <ul>
-            <li>Beer knowledge</li>
-            <li>Crochet</li>
-            <li>Doodling</li>
-            <li>Skateboarding</li>
-            <li>Sleeping</li>
+        <div class="item">
+          <h3>Bartender — Kuma’s Corner</h3>
+          <p class="meta">2015–2018</p>
+          <ul class="bullets">
+            <li>Served craft beer & burgers, maintained bar mise en place, and trained new hires.</li>
           </ul>
         </div>
       </section>
 
       <section class="section">
-  
+        <h2 class="section__title">Education</h2>
+        <div class="item">
+          <h3>Columbia College — Graphic Design (Student)</h3>
+          <p class="meta">2015–2017</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">Skills</h2>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Git & GitHub</span>
+          <span class="tag">Accessibility</span>
+          <span class="tag">Graphic Design</span>
+          <span class="tag">Crochet</span>
+          <span class="tag">Illustration</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">Projects</h2>
+        <div class="projects">
+          <a class="card" href="#" aria-label="About Me project">
+            <h3>About Me</h3>
+            <p>Practiced semantic HTML structure.</p>
+            <span class="chip">HTML</span>
+          </a>
+
+          <a class="card" href="#" aria-label="Correct the HTML project">
+            <h3>Correct the HTML</h3>
+            <p>Fixed errors and improved accessibility.</p>
+            <span class="chip">HTML</span><span class="chip">a11y</span>
+          </a>
+
+          <a class="card" href="#" aria-label="Hello World project">
+            <h3>Hello World</h3>
+            <p>Learned basic tags and page layout.</p>
+            <span class="chip">HTML</span>
+          </a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <a class="btn btn--outline" href="#top">Back to top</a>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
