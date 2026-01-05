@@ -1,0 +1,154 @@
+/* Mobile-first base */
+:root {
+  --bg: #0f1216;
+  --card: #151a21;
+  --text: #e8eef6;
+  --muted: #aab6c6;
+  --accent: #7bdff2;
+  --border: rgba(255, 255, 255, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+}
+
+.page {
+  padding: 16px;
+}
+
+/* shared card wrapper */
+.card {
+  max-width: 950px;
+  margin: 0 auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+/* header */
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+
+.name {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.btn--ghost {
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.btn--ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* sections */
+.section {
+  margin-bottom: 18px;
+}
+
+.section__title {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+  color: var(--accent);
+}
+
+.meta {
+  margin: 6px 0 10px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.bullets li {
+  margin: 6px 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Projects list: small polish */
+.project-list h2 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+}
+.project-list p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Desktop layout (Grid) */
+@media (min-width: 800px) {
+  .page {
+    padding: 28px;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 2.1rem;
+  }
+
+  /* Optional two-column layout for Resume/About content */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}
