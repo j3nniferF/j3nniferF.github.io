@@ -1,62 +1,125 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects – Jennifer Handel</title>
-  <link rel="stylesheet" href="css/index.css" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects – Jennifer Handel</title>
+    <meta
+      name="description"
+      content="Projects by Jennifer Handel (repos + short descriptions)."
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-<body>
-  <main class="page">
-    <article class="card project-list">
-      <header class="header">
-        <h1 class="name">Projects</h1>
+  <body>
+    <main class="page">
+      <article class="card">
+        <header class="header">
+          <div class="header__left">
+            <h1 class="name">Projects</h1>
+            <p class="headline">
+              Small projects, practice builds, and capstone work
+            </p>
+          </div>
 
-        <nav class="nav">
-          <a class="btn btn--ghost" href="index.html">Home</a>
-          <a class="btn btn--ghost" href="resume.html">Resume</a>
-          <a class="btn btn--ghost" href="projects.html">Projects</a>
-          <a class="btn btn--ghost" href="https://github.com/j3nniferF" target="_blank" rel="noopener">GitHub</a>
-        </nav>
-      </header>
+          <nav class="nav" aria-label="Primary">
+            <a class="btn btn--ghost" href="index.html">Home</a>
+            <a class="btn btn--ghost" href="resume.html">Resume</a>
+            <a class="btn btn--ghost is-active" href="projects.html"
+              >Projects</a
+            >
+            <a
+              class="btn btn--ghost"
+              href="https://github.com/j3nniferF"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+            <a
+              class="btn btn--ghost"
+              href="https://www.linkedin.com/in/jenniferhandel"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </nav>
+        </header>
 
-      <section class="section">
-        <h2>
-          <a href="https://github.com/j3nniferF/PArrayground" target="_blank" rel="noopener">
-            🔢 PArrayground
+        <section class="section project-grid">
+          <a
+            class="project"
+            href="https://github.com/j3nniferF/dsigdt-capstone"
+            target="_blank"
+            rel="noopener"
+          >
+            <h2 class="project__title">DSIGDT (Capstone)</h2>
+            <p class="muted">
+              Task dashboard app with tabs, timers, persistence, and a stats
+              page.
+            </p>
+            <p class="small muted">HTML • CSS • JavaScript • localStorage</p>
           </a>
-        </h2>
-        <p>JavaScript arrays and logic practice.</p>
-      </section>
 
-      <section class="section">
-        <h2>
-          <a href="https://github.com/j3nniferF/About-Me-HTML" target="_blank" rel="noopener">
-            🧠 About-Me-HTML
+          <a
+            class="project"
+            href="https://github.com/j3nniferF/PArrayground"
+            target="_blank"
+            rel="noopener"
+          >
+            <h2 class="project__title">PArrayground</h2>
+            <p class="muted">
+              Arrays, indexing, safe access patterns, and loop practice.
+            </p>
+            <p class="small muted">JavaScript</p>
           </a>
-        </h2>
-        <p>Semantic HTML structure practice.</p>
-      </section>
 
-      <section class="section">
-        <h2>
-          <a href="https://github.com/j3nniferF/Correct-The-HTML" target="_blank" rel="noopener">
-            🛠 Correct the HTML
+          <a
+            class="project"
+            href="https://github.com/CodeYouOrg/correct-the-html-responsive"
+            target="_blank"
+            rel="noopener"
+          >
+            <h2 class="project__title">Correct the HTML (Responsive)</h2>
+            <p class="muted">
+              Practice fixing structure and responsiveness in existing markup.
+            </p>
+            <p class="small muted">HTML • CSS</p>
           </a>
-        </h2>
-        <p>Accessibility and structure fixes.</p>
-      </section>
 
-      <section class="section">
-        <h2>
-          <a href="https://github.com/j3nniferF/Hello-World" target="_blank" rel="noopener">
-            🌱 Hello World
+          <a
+            class="project"
+            href="https://github.com/CodeYouOrg/correct-the-html"
+            target="_blank"
+            rel="noopener"
+          >
+            <h2 class="project__title">Correct the HTML</h2>
+            <p class="muted">Semantic structure + accessibility cleanup.</p>
+            <p class="small muted">HTML</p>
           </a>
-        </h2>
-        <p>First HTML practice project.</p>
-      </section>
-    </article>
-  </main>
-</body>
+
+          <a
+            class="project"
+            href="https://github.com/CodeYouOrg/about-me-html"
+            target="_blank"
+            rel="noopener"
+          >
+            <h2 class="project__title">About Me (HTML)</h2>
+            <p class="muted">Semantic HTML structure practice project.</p>
+            <p class="small muted">HTML</p>
+          </a>
+
+          <a
+            class="project"
+            href="https://github.com/CodeYouOrg/hello-world"
+            target="_blank"
+            rel="noopener"
+          >
+            <h2 class="project__title">Hello World</h2>
+            <p class="muted">First practice repo + GitHub workflow.</p>
+            <p class="small muted">HTML</p>
+          </a>
+        </section>
+      </article>
+    </main>
+  </body>
 </html>

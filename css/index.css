@@ -1,4 +1,8 @@
-/* Mobile-first base */
+/* =========================================================
+   Jennifer Handel — simple, clean, professional UI
+   (and prints nicely to PDF)
+========================================================= */
+
 :root {
   --bg: #0f1216;
   --card: #151a21;
@@ -6,6 +10,7 @@
   --muted: #aab6c6;
   --accent: #7bdff2;
   --border: rgba(255, 255, 255, 0.12);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 * {
@@ -14,43 +19,80 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: var(--bg);
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+  background:
+    radial-gradient(
+      1200px 600px at 20% 0%,
+      rgba(123, 223, 242, 0.12),
+      transparent 55%
+    ),
+    radial-gradient(
+      900px 600px at 90% 10%,
+      rgba(255, 255, 255, 0.05),
+      transparent 50%
+    ),
+    var(--bg);
   color: var(--text);
   line-height: 1.6;
 }
 
 a {
   color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 .page {
   padding: 16px;
 }
 
-/* shared card wrapper */
 .card {
-  max-width: 950px;
+  max-width: 980px;
   margin: 0 auto;
-  background: var(--card);
+  background: rgba(21, 26, 33, 0.92);
   border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 16px;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
 }
 
-/* header */
+.card--resume {
+  max-width: 1050px;
+}
+
 .header {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding-bottom: 16px;
+  gap: 10px;
+  padding-bottom: 14px;
   border-bottom: 1px solid var(--border);
   margin-bottom: 16px;
 }
 
+.header__left {
+  display: grid;
+  gap: 6px;
+}
+
 .name {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.85rem;
+  letter-spacing: -0.02em;
+}
+
+.headline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
 }
 
 .nav {
@@ -59,52 +101,69 @@ a {
   gap: 10px;
 }
 
-/* buttons */
+/* Buttons (nav pills) */
 .btn {
   display: inline-block;
   padding: 10px 12px;
   border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-}
-
-.btn--ghost {
   border: 1px solid var(--border);
+  text-decoration: none;
+  font-weight: 650;
+  font-size: 0.95rem;
   color: var(--text);
 }
 
-.btn--ghost:hover {
+.btn:hover {
   border-color: var(--accent);
   color: var(--accent);
+  text-decoration: none;
 }
 
-/* sections */
+.btn.is-active {
+  border-color: rgba(123, 223, 242, 0.55);
+  box-shadow: 0 0 0 3px rgba(123, 223, 242, 0.12);
+}
+
+/* Sections */
 .section {
   margin-bottom: 18px;
 }
 
 .section__title {
   margin: 0 0 10px;
-  font-size: 1.15rem;
+  font-size: 1.12rem;
   color: var(--accent);
+  letter-spacing: 0.01em;
+}
+
+.subhead {
+  margin: 14px 0 8px;
+  font-size: 0.98rem;
+  color: var(--text);
+  opacity: 0.92;
 }
 
 .meta {
-  margin: 6px 0 10px;
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.muted {
+  color: var(--muted);
+}
+.small {
+  font-size: 0.92rem;
 }
 
 .bullets {
   margin: 0;
   padding-left: 18px;
 }
-
 .bullets li {
   margin: 6px 0;
 }
 
+/* Tags */
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -119,18 +178,116 @@ a {
   font-size: 0.9rem;
 }
 
-/* Projects list: small polish */
-.project-list h2 {
-  margin: 0 0 6px;
-  font-size: 1.1rem;
+/* Two-column areas */
+.two-col {
+  display: block;
 }
-.project-list p {
-  margin: 0;
-  color: var(--muted);
+.two-col--resume {
+  align-items: start;
 }
 
-/* Desktop layout (Grid) */
-@media (min-width: 800px) {
+/* Resume items */
+.item {
+  padding: 12px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.12);
+  margin-bottom: 12px;
+}
+
+.item__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.item__title {
+  margin: 0;
+  font-size: 1.02rem;
+}
+
+.item__link {
+  font-size: 0.92rem;
+  color: var(--accent);
+  border: 1px solid rgba(123, 223, 242, 0.35);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.item__link:hover {
+  text-decoration: none;
+  border-color: var(--accent);
+}
+
+/* Contact line on resume */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.contact__item {
+  color: var(--accent);
+}
+.contact__dot {
+  color: rgba(255, 255, 255, 0.22);
+}
+
+/* Home callouts */
+.callouts {
+  display: grid;
+  gap: 12px;
+}
+
+.callout {
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.callout__title {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+/* Projects grid */
+.project-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.project {
+  display: block;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.project:hover {
+  border-color: rgba(123, 223, 242, 0.45);
+  text-decoration: none;
+}
+
+.project__title {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+/* Footer */
+.footer {
+  margin-top: 6px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Desktop */
+@media (min-width: 860px) {
   .page {
     padding: 28px;
   }
@@ -138,17 +295,76 @@ a {
   .header {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 16px;
   }
 
   .name {
     font-size: 2.1rem;
   }
 
-  /* Optional two-column layout for Resume/About content */
   .two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
   }
+
+  .callouts {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =========================================================
+   Print-to-PDF (Resume)
+========================================================= */
+@media print {
+  body {
+    background: white !important;
+    color: #111 !important;
+  }
+
+  .page {
+    padding: 0 !important;
+  }
+  .card {
+    box-shadow: none !important;
+    border: none !important;
+    background: white !important;
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  .nav--print-hide,
+  .footer--print-hide {
+    display: none !important;
+  }
+
+  a {
+    color: #111 !important;
+    text-decoration: none !important;
+  }
+
+  .section__title {
+    color: #111 !important;
+  }
+  .muted {
+    color: #333 !important;
+  }
+
+  .item {
+    border: 1px solid #ddd !important;
+    background: white !important;
+  }
+
+  .tag {
+    border: 1px solid #ddd !important;
+    color: #111 !important;
+  }
+
+  .item__link {
+    display: none !important;
+  } /* print clean */
 }
