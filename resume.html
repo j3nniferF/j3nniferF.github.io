@@ -4,218 +4,214 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jennifer Handel – Resume</title>
-    <meta
-      name="description"
-      content="Resume for Jennifer Handel (web development student). PDF-friendly layout."
-    />
     <link rel="stylesheet" href="css/index.css" />
   </head>
 
   <body>
     <main class="page">
-      <article class="card card--resume">
-        <header class="header header--resume">
-          <div class="header__left">
-            <h1 class="name">Jennifer Handel</h1>
-            <p class="headline">Entry-level Web Development • Louisville, KY</p>
+      <article class="card shell">
+        <div class="card__inner">
+          <header class="header">
+            <div class="header__left">
+              <h1 class="name">Jennifer Handel</h1>
+              <p class="kicker">Entry-level Web Development • Louisville, KY</p>
 
-            <div class="contact">
-              <a class="contact__item" href="mailto:jennifer.f.handel@gmail.com"
-                >jennifer.f.handel@gmail.com</a
-              >
-              <span class="contact__dot">•</span>
+              <div class="contact">
+                <a href="mailto:jennifer.f.handel@gmail.com"
+                  >jennifer.f.handel@gmail.com</a
+                >
+                <a
+                  href="https://www.linkedin.com/in/jenniferhandel"
+                  target="_blank"
+                  rel="noopener"
+                  >linkedin.com/in/jenniferhandel</a
+                >
+                <a
+                  href="https://github.com/j3nniferF"
+                  target="_blank"
+                  rel="noopener"
+                  >github.com/j3nniferF</a
+                >
+              </div>
+            </div>
+
+            <nav class="nav" aria-label="Primary">
+              <a class="tab" href="index.html">Home</a>
+              <a class="tab" href="resume.html" aria-current="page">Resume</a>
+              <a class="tab" href="projects.html">Projects</a>
+
+              <!-- PDF button ONLY here -->
               <a
-                class="contact__item"
+                class="tab tab--pdf"
+                href="./Jennifer-Handel-Resume.pdf"
+                target="_blank"
+                rel="noopener"
+                >PDF Resume</a
+              >
+
+              <a class="tab" href="mailto:jennifer.f.handel@gmail.com">Email</a>
+              <a
+                class="tab"
                 href="https://www.linkedin.com/in/jenniferhandel"
                 target="_blank"
                 rel="noopener"
-                >linkedin.com/in/jenniferhandel</a
+                >LinkedIn</a
               >
-              <span class="contact__dot">•</span>
               <a
-                class="contact__item"
+                class="tab"
                 href="https://github.com/j3nniferF"
                 target="_blank"
                 rel="noopener"
-                >github.com/j3nniferF</a
+                >GitHub</a
               >
-            </div>
-          </div>
+            </nav>
+          </header>
 
-          <nav class="nav nav--print-hide" aria-label="Primary">
-            <a class="btn btn--ghost" href="index.html">Home</a>
-            <a class="btn btn--ghost is-active" href="resume.html">Resume</a>
-            <a class="btn btn--ghost" href="projects.html">Projects</a>
-            <a class="btn btn--ghost" href="mailto:jennifer.f.handel@gmail.com"
-              >Email</a
-            >
-          </nav>
-        </header>
+          <div class="divider"></div>
 
-        <section class="section">
-          <h2 class="section__title">Summary</h2>
-          <p>
-            Web development student in Code:You building responsive front-end
-            pages with HTML, CSS, and JavaScript. Background in hospitality
-            leadership and graphic design — strong communication, attention to
-            detail, and a user-focused approach to building clean, readable
-            interfaces.
-          </p>
-        </section>
-
-        <div class="two-col two-col--resume">
-          <section class="section">
-            <h2 class="section__title">Skills</h2>
-
-            <h3 class="subhead">Technical</h3>
-            <div class="tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript (Foundations)</span>
-              <span class="tag">Responsive Design</span>
-              <span class="tag">Git &amp; GitHub</span>
-              <span class="tag">VS Code</span>
-            </div>
-
-            <h3 class="subhead">Transferable</h3>
-            <div class="tags">
-              <span class="tag">Customer Communication</span>
-              <span class="tag">Training &amp; Onboarding</span>
-              <span class="tag">Process Improvement</span>
-              <span class="tag">Team Coordination</span>
-              <span class="tag">Design Thinking</span>
-            </div>
-          </section>
-
-          <section class="section">
-            <h2 class="section__title">Projects</h2>
-
-            <div class="item">
-              <div class="item__top">
-                <h3 class="item__title">
-                  DSIGDT – Daily Dashboard (Capstone in progress)
-                </h3>
-                <a
-                  class="item__link"
-                  href="https://github.com/j3nniferF/dsigdt-capstone"
-                  target="_blank"
-                  rel="noopener"
-                  >Repo</a
-                >
-              </div>
-              <ul class="bullets">
-                <li>
-                  Multi-page app with tab-based task lists, timers, and
-                  localStorage persistence.
-                </li>
-                <li>
-                  Designed UI to be readable, responsive, and consistent across
-                  pages.
-                </li>
-              </ul>
-              <p class="muted small">
-                Tech: HTML, CSS, JavaScript, GitHub Pages
+          <div class="grid grid--2">
+            <section class="section">
+              <h2 class="h2">Summary</h2>
+              <p class="p">
+                Web development student in Code:You building responsive
+                front-end pages with HTML, CSS, and JavaScript. <br />
+                Background in graphic design and hospitality leadership, strong
+                communication, organization, and user-focused thinking.
               </p>
-            </div>
 
-            <div class="item">
-              <div class="item__top">
-                <h3 class="item__title">PArrayground</h3>
-                <a
-                  class="item__link"
-                  href="https://github.com/j3nniferF/PArrayground"
-                  target="_blank"
-                  rel="noopener"
-                  >Repo</a
-                >
+              <div class="section">
+                <h2 class="h2">Skills</h2>
+                <div class="tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Responsive Design</span>
+                  <span class="tag">Git</span>
+                  <span class="tag">GitHub</span>
+                  <span class="tag">UI / Visual Design</span>
+                </div>
               </div>
-              <ul class="bullets">
-                <li>
-                  Practice project focused on arrays, indexing, looping, and
-                  safe access patterns.
-                </li>
-              </ul>
-              <p class="muted small">Tech: JavaScript</p>
-            </div>
-          </section>
+
+              <div class="section">
+                <h2 class="h2">Projects</h2>
+
+                <div class="panel">
+                  <div class="link-row">
+                    <h3 class="panel__title">
+                      DSIGDT — Daily Dashboard (Capstone in progress)
+                    </h3>
+                    <a class="btn-mini btn-mini--primary" href="projects.html"
+                      >Projects</a
+                    >
+                  </div>
+                  <ul class="bullets">
+                    <li>
+                      Multi-page app with tabbed task lists, timer tools, and
+                      localStorage persistence
+                    </li>
+                    <li>
+                      Designed UI for clarity, responsiveness, and consistent
+                      layout across pages
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="panel">
+                  <div class="link-row">
+                    <h3 class="panel__title">
+                      PArrayground — JavaScript practice
+                    </h3>
+                    <a
+                      class="btn-mini"
+                      href="https://github.com/j3nniferF/PArrayground"
+                      target="_blank"
+                      rel="noopener"
+                      >Repo</a
+                    >
+                  </div>
+                  <p class="meta">
+                    Arrays, indexing, looping, and safe access patterns
+                  </p>
+                </div>
+
+                <div class="panel">
+                  <div class="link-row">
+                    <h3 class="panel__title">Bean Page — personal site</h3>
+                    <a
+                      class="btn-mini"
+                      href="https://github.com/j3nniferF/bean-page"
+                      target="_blank"
+                      rel="noopener"
+                      >Repo</a
+                    >
+                  </div>
+                  <p class="meta">Static site practice with layout + styling</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="section">
+              <h2 class="h2">Work Experience</h2>
+
+              <div class="panel">
+                <h3>Bartender / Manager — Merryweather</h3>
+                <p class="meta">2018–2022</p>
+                <ul class="bullets">
+                  <li>
+                    Managed day-to-day operations and inventory in a high-volume
+                    environment
+                  </li>
+                  <li>
+                    Created training guides and supported onboarding for new
+                    staff
+                  </li>
+                  <li>
+                    Coordinated schedules and handled time-sensitive issues
+                    calmly under pressure
+                  </li>
+                </ul>
+              </div>
+
+              <div class="panel">
+                <h3>Bartender — Kuma’s Corner</h3>
+                <p class="meta">2015–2018</p>
+                <ul class="bullets">
+                  <li>
+                    Delivered consistent service while balancing multiple
+                    priorities
+                  </li>
+                  <li>
+                    Trained new hires and supported team workflow during peak
+                    hours
+                  </li>
+                </ul>
+              </div>
+
+              <div class="section">
+                <h2 class="h2">Education</h2>
+
+                <div class="panel">
+                  <h3>Code:You — Web Development</h3>
+                  <p class="meta">In progress</p>
+                </div>
+
+                <div class="panel">
+                  <h3>Columbia College — Graphic Design (Coursework)</h3>
+                  <p class="meta">2015–2017</p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <footer class="footer">
+            <small>© <span id="year"></span> Jennifer Handel</small>
+          </footer>
         </div>
-
-        <section class="section">
-          <h2 class="section__title">Work Experience</h2>
-
-          <div class="item">
-            <div class="item__top">
-              <h3 class="item__title">Bartender / Manager — Merryweather</h3>
-              <span class="meta">2018–2022</span>
-            </div>
-            <ul class="bullets">
-              <li>
-                Managed daily operations, inventory, and shift flow in a
-                fast-paced environment.
-              </li>
-              <li>
-                Created training guides and supported onboarding to improve
-                consistency and speed-to-ready.
-              </li>
-              <li>
-                Coordinated with team members to solve issues quickly while
-                maintaining customer experience.
-              </li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div class="item__top">
-              <h3 class="item__title">Bartender — Kuma’s Corner</h3>
-              <span class="meta">2015–2018</span>
-            </div>
-            <ul class="bullets">
-              <li>
-                Provided high-quality service while managing multiple priorities
-                and peak-hour volume.
-              </li>
-              <li>
-                Trained new hires on workflows, accuracy, and customer
-                communication.
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="section">
-          <h2 class="section__title">Education</h2>
-
-          <div class="item">
-            <div class="item__top">
-              <h3 class="item__title">Code:You — Web Development Pathway</h3>
-              <span class="meta">In progress</span>
-            </div>
-            <p class="muted">
-              Coursework includes HTML/CSS/JS foundations, responsive design,
-              Git/GitHub workflow, and project development.
-            </p>
-          </div>
-
-          <div class="item">
-            <div class="item__top">
-              <h3 class="item__title">
-                Columbia College — Graphic Design (Coursework)
-              </h3>
-              <span class="meta">2015–2017</span>
-            </div>
-            <p class="muted">
-              Design fundamentals, layout, visual hierarchy, and communication
-              through clean composition.
-            </p>
-          </div>
-        </section>
-
-        <footer class="footer footer--print-hide">
-          <p class="muted small">
-            Tip: To export a PDF, use your browser’s Print → “Save as PDF”.
-          </p>
-        </footer>
       </article>
     </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
